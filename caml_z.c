@@ -24,7 +24,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+#ifdef MINIOS
+#include <openlibm.h>
+#else
 #include <math.h>
+#endif
+
 #include <stdint.h>
 
 #ifdef HAS_GMP

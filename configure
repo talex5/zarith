@@ -25,10 +25,10 @@ perf='no'
 # should we make the following auto-detected or configurable?
 if test -n "$CC"; then
   cc="$CC"
-  ccopt="$CFLAGS"
+  ccopt="$CFLAGS $MIRAGE_CFLAGS"
 else
   cc='gcc'
-  ccopt="-O3 -Wall -Wextra $CFLAGS"
+  ccopt="-O3 -Wall -Wextra $CFLAGS $MIRAGE_CFLAGS"
 fi
 ar='ar'
 ocaml='ocaml'
